@@ -174,7 +174,18 @@
     </svg>
 
   </section><!-- End Hero -->
+	<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">×</div>
+    <h1>SUCCES!</h1>
 
+	<p></p>
+	  <p>Thank you for using our website!</p>
+	  <p>recommend us to your friends and have a nice day!</p>
+
+  </div>
+</div>
   <main id="main">
 
 
@@ -244,7 +255,7 @@
 			
               </ul>
               <div class="btn-wrap">
-                <a href="index.html" class="btn-buy">Send Form</a>
+                <a href="index.html" onclick="togglePopup()" class="btn-buy">Send Form</a>
               </div>
             </div>
           </div>
@@ -292,7 +303,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script>
+	function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+</script>
 </body>
 
 </html>
