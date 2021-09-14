@@ -174,7 +174,20 @@
     </svg>
 
   </section><!-- End Hero -->
+	<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">×</div>
+    <h1>SUCCES!</h1>
 
+	<p></p>
+	  <p>Thank you for contact !</p>
+	  <p>we will contact you as soon as possible, usually it takes one working day :)</p>
+	                <div class="btn-wrap">
+                <a href="index.html" class="btn-buy">Come back to shop</a>
+              </div>
+  </div>
+</div>
   <main id="main">
 
 
@@ -187,7 +200,7 @@
     <section id="pricing" class="pricing">
       <div class="container">
 
-        <<div class="section-title" data-aos="zoom-out">
+        <div class="section-title" data-aos="zoom-out">
           <h2>Shop</h2>
           <p>REFUND</p>
         </div>
@@ -196,47 +209,50 @@
 
           <div class="col-lg-3 col-md-6 glowing-border">
             <div class="box" data-aos="zoom-in">
-              <h3>REFUND</h3>
-			  <a href="TOS.html">
-			  <p></p>
+
+	
+	
               <ul>
 				
-                <li>1. Please state the reason you want a refund</li>
+                                <li>1. Please state the reason you want a refund</li>
 				<li>2. Enter your order ID from PayPal (or your full name)</li>
 				<li>3. Enter your E-mail adress</li>
-				<p></p>
+				<li></li>
 				<li>we will contact you as soon as possible, usually it takes one working day.</li>
+				
+	
               </ul>
 
             </div>
           </div>
-		  
 
           <div class="col-lg-3 col-md-6 mt-4 mt-md-0 glowing-border">
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                <h3>FORM</h3>
+              <h3>FORM</h3>
 				   </a>
-              
-              
+            
+              <ul>
               
 				<input type="checkbox"> I READ AND ACCEPT T.O.S</>
 				<p></p>
-
-<label for="cars">Choose a reson:</label>
+				<input type="text" placeholder="PayPal Order ID"> </>
+				<p></p>
+				<input type="text" placeholder="E-mail adress"> </>
+				<p></p>
+				<input type="text" placeholder=""> </>
+	      <p></p>
+	    <label for="cars">Choose a reson:</label>
 
 <select name="Skins" id="Skin">
   <option value="1">I have not received my account.</option>
   <option value="2">the product is not as described.</option>
-  <option value="4">Another reson.</option>
-
+  <option value="3">Another reson.</option>
 </select>
-<p></p>
-				<input type="text" placeholder="PayPal order ID"> </>
-				<p></p>
-				<input type="text" placeholder="E-mail Adress"> </>
-	      <p></p>
-	  <p></p>
-		<a href="#SUCCES"  class="btn-buy">Send Form</a>
+		
+			
+              </ul>
+              <div class="btn-wrap">
+                <a href="#hero" onclick="togglePopup()" class="btn-buy">Send Form</a>
               </div>
             </div>
           </div>
@@ -244,7 +260,7 @@
       
                
       
-     </section> 
+      
 
 		     </div>
 
@@ -284,7 +300,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script>
+	function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+</script>
 </body>
 
 </html>
