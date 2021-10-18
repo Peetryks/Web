@@ -1,18 +1,40 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+<style>
 
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00bfff; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0086b3; 
+}
+
+</style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Fortniteshoping.xyz 2019-2021</title>
+  <title>FortniteShopping.com</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/profile-img.jpg" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -30,126 +52,252 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: iPortfolio - v3.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Template Name: MyResume - v4.6.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-<style>
-.glowing-border {
-    border: 0px solid #0d0d0d;
-    border-radius: 1px;
-}
 
-.glowing-border:focus { 
-    outline: none;
-    border-color: #b32400;
-    box-shadow: 0 0 20px #b32400;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #657abe; 
-  border-radius: 0px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #ff4000; 
-}
-
-</style>
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <header id="header" class="d-flex flex-column justify-content-center">
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Fortniteshoping.xyz</a></h1>
-        <div class="social-links mt-3 text-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>HOME</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>ABOUT</span></a></li>
+        <li><a href="#shop" class="nav-link scrollto"><i class="bx bx-server"></i> <span>SHOP</span></a></li>
+        <li><a href="feedback.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>FEEDBACKS</span></a></li>
+		<li><a href="tos.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>TERMS OF SERVICE</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
 
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Feedback</span></a></li>
- <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Come Back to Shop</span></a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Feedback</h1>
-      <p>Check <span class="typed" data-typed-items="opinions"></span></p>
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>FortniteShoping.xyz</h1>
+      <p> <span class="typed" data-typed-items="check the opinions of other customers!"></span></p>
+
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup1()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 16.10.2021</p>
+	  <p>Google Chrome, Windows</p>
+	    <p>purchased: RENEGADE RAIDER OG FULL ACCESS ACCOUNT</p>
+
+  </div>
+</div>
+<div class="popup" id="popup-2">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup2()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 16.10.2021</p>
+	  <p>Google Chrome, Windows</p>
+	    <p>purchased: OG SKULL TROOPER OG FULL ACCESS ACCOUNT</p>
+
+  </div>
+</div>
+
+
+<div class="popup" id="popup-3">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup3()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 12.07.2021</p>
+	  <p>Microsoft Edge, Windows</p>
+	    <p>purchased: BLACK KNIGHT OG FULL ACCESS ACCOUNT</p>
+
+  </div>
+</div>
+<div class="popup" id="popup-4">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup4()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 12.07.2021</p>
+	  <p>Google Chrome, Windows</p>
+	    <p>purchased: BLACK KNIGHT OG FULL ACCESS ACCOUNT</p>
+
+  </div>
+</div>
+<div class="popup" id="popup-5">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup5()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 10.07.2021</p>
+	  <p>Microsoft Edge, Windows</p>
+	    <p>purchased: IKONIK OG FULL ACCESS ACCOUNT </p>
+
+  </div>
+</div>
+<div class="popup" id="popup-6">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup6()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 21.12.2020</p>
+	  <p>Safari, MacOS</p>
+	    <p>purchased: RECON EXPERT OG FULL ACCESS ACCOUNT </p>
+
+  </div>
+</div>
+
+
+<div class="popup" id="popup-7">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup7()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 14.10.2020</p>
+	  <p>Google Chrome, Windows</p>
+	    <p>purchased: BLACK KNIGHT  OG FULL ACCESS ACCOUNT </p>
+
+  </div>
+</div>
+<div class="popup" id="popup-8">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup8()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 12.10.2020</p>
+	  <p>Google Chrome, Windows</p>
+	    <p>purchased: GALAXY OG FULL ACCESS ACCOUNT </p>
+
+  </div>
+</div>
+<div class="popup" id="popup-9">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup9()">×</div>
+    <h1>DETAILS</h1>
+	<p></p>
+				 <img src="assets/img/testimonials/profile.png" 
+			       width="200" 
+				   height="200" />
+				   </a>
+	  <p>added on: 18.07.2020</p>
+	  <p>Safari, MacOS</p>
+	    <p>purchased: RENEGADE RAIDER OG FULL ACCESS ACCOUNT </p>
+
+  </div>
+</div>
+<div class="popup" id="popup-10">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup10()">×</div>
+    <h1>SUCCESS!</h1>
+	<p></p>
+	
+
+	  <h4>Thanks for your opinion !</h4>
+	    <p>before it reaches our website, it has been sent for verification</p>
+  <div class="text-center">
+				<a class="cta-btn"  href="index.html">BACK TO SHOP</a>
+				</div>
+  </div>
+</div>
     <!-- ======= About Section ======= -->
    
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container">
+
+    <!-- ======= Skills Section ======= -->
+   
+
+ <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Facts</h2>
-         
+          <p>check our stats below!</p>
         </div>
 
-        <div class="row no-gutters">
+        <div class="row">
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="432" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> number of satisfied customers</p>
+              <span data-purecounter-start="0" data-purecounter-end="756" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span><p>minutes</p>
-              <p><strong>Delivery</strong> fast delivery</p>
+              <span data-purecounter-start="0" data-purecounter-end="800" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Orders</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong></p>
+              <span data-purecounter-start="0" data-purecounter-end="6102" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>number of employees</strong> compact and ready to help!</p>
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+              <p>staff ready to help</p>
             </div>
           </div>
 
@@ -157,167 +305,309 @@
 
       </div>
     </section><!-- End Facts Section -->
+ 
+    <!-- ======= Portfolio Section ======= -->
+ 
 
-    <!-- ======= Skills Section ======= -->
-  
     <!-- ======= Services Section ======= -->
-    <section id="portfolio" class="services">
-      <div class="container">
+	<section id="shop">
+    
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>FEEDBACK</h2>
-		  <p>before your opinion appears here, it is sent for verification to check for violations.</p>
- </div>
+          <h2>FEEDBACKS</h2>
+
+        </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> All work, recommend!</p>
-
-			
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>I thought it was a scam XD but seriously got an account RECOMMEND</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup1()" href="#">see details</a>
+				</div>
+            </div>
           </div>
-       
-          <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> I thought it was a scam XD but seriously got an account RECOMMEND</p>
-
-			
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>I was scared because the prices are suspicious, but the account arrived so its legit!</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup2()" href="#">see details</a>
+				</div>
+            </div>
           </div>
-                  
-          <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+                             <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> account working</p>
-
-			
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>Legit Shop</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup3()" href="#">see details</a>
+				</div>
+            </div>
           </div>
-            
-          <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+		  
+		                               <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> Legit Shop</p>
-
-			
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>I received my account 6 minutes after the purchase, I'm satisfied</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup4()" href="#">see details</a>
+				</div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+		  
+		  
+				  
+		                               <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> I was scared because the prices are suspicious, but the account arrived so its legit!</p>
-
-			
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>fast delivery, recommend</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup5()" href="#">see details</a>
+				</div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+		  
+		  
+		  
+
+		                               <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> ALL OKKKK</p>
-
-			
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>good service</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup6()" href="#">see details</a>
+				</div>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+		  
+		  
+		  
+
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> NICE NICE REEECOMENDDD</p>
-
-			
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>thx for Black knight Account</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup7()" href="#">see details</a>
+				</div>
+            </div>
           </div>
-        <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title"><a href="">VERIFIED CUSTOMER</a></h4>
-			 <img src="profile.png" 
+		  
+		  
+		  
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
 			       width="200" 
 				   height="200" />
 				   </a>
-				   <p></p>
-            <p class="description"> I received my account 6 minutes after the purchase, I'm satisfied</p>
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>This is my second purchase on the site, everything is fine, I recommend it</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup8()" href="#">see details</a>
+				</div>
+            </div>
+          </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              
+			   <img src="assets/img/testimonials/profile.png"
+			       width="200" 
+				   height="200" />
+				   </a>
+              <h4>VERIFIED CUSTOMER</h4>
+			<p>ya Its ok</p>
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup9()" href="#">see details</a>
+				</div>
+            </div>
+          </div>
 
-			
-          </div>
-		  	      <div class="col-lg-4 col-md-6 icon-box glowing-border" data-aos="fade-up">
-            
-            <h4><a href="">ADD YOUR OPINION</a></h4>
-		
-			<p></p>
-            <input type="text" placeholder="PayPal Order ID"> </>
-			<p></p>
-            <input type="text" placeholder="E-mail adress"> </>
-			 <p></p>
-            <input type="text" placeholder="Opinion content"> </>
-			<p></p>
-			<a href="" class="btn-buy ">Add Feedback</a>
-			
-          </div>
-        </div>
 
 		  
-        </div>
+		  
+		  
+		  
 
+        </div>
 
       </div>
     </section><!-- End Services Section -->
-	
+	<section id="services3" class="services">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-title">
+          <h2>ADD YOUR OWN FEEDBACK</h2>
+
+        </div>
+
+        <div class="row">
+      
+		  
+		  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+                    <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bx-user"></i>
+              </div>
+
+              <h4>FORM</h4>
+			  	<input type="text" placeholder="E-mail adress"> </>
+			  	<input type="text" placeholder="PayPal Order ID"> </>
+              	<input type="text" placeholder="Text"> </>
+		
+			  <div class="text-center">
+				<a class="cta-btn" onclick="togglePopup10()" href="#">ADD FEEDBACK</a>
+				</div>
+            </div>
+          </div>
+
+        
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+	</section>
     <!-- ======= Testimonials Section ======= -->
-   
-    <!-- ======= Contact Section ======= -->
-   
+
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Fortniteshoping.xyz</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-       
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+      <h3>FortniteShoping.xyz</h3>
+      <p>Most Popular Fortnite account shop | 2018-2021</p>
 
+      <div class="copyright">
+        &copy; Copyright <strong><span>FortniteShoping.xyz</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
+
+<script>
+	function togglePopup(){
+  document.getElementById("popup-0").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup1(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup2(){
+  document.getElementById("popup-2").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup3(){
+  document.getElementById("popup-3").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup4(){
+  document.getElementById("popup-4").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup5(){
+  document.getElementById("popup-5").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup6(){
+  document.getElementById("popup-6").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup7(){
+  document.getElementById("popup-7").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup8(){
+  document.getElementById("popup-8").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup9(){
+  document.getElementById("popup-9").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup10(){
+  document.getElementById("popup-10").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup11(){
+  document.getElementById("popup-11").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup12(){
+  document.getElementById("popup-12").classList.toggle("active");
+}
+</script>
+<script>
+	function togglePopup13(){
+  document.getElementById("popup-113").classList.toggle("active");
+}
+</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
