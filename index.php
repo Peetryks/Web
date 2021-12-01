@@ -1,44 +1,32 @@
+<!DOCTYPE html>
 <html>
 <head>
-	
-	</head>
-	<body>
-		<form method="POST" name="contactform" action="contact-form-handler.php">
-    <p>
-        <label for='name'>Your Name:</label>
-        <br>
-        <input type="text" name="name">
-    </p>
-    <p>
-        <label for='email'>Email Address:</label>
-        <br>
-        <input type="text" name="email">
-        <br>
-    </p>
-    <p>
-        <label for='message'>Message:</label>
-        <br>
-        <textarea name="message"></textarea>
-    </p>
-    <input type="submit" value="Submit">
-    <br>
+<title>FeedBack Form With Email Functionality</title>
+<link href="css/elements.css" rel="stylesheet">
+</head>
+<!-- Body Starts Here -->
+<body>
+<div class="container">
+<!-- Feedback Form Starts Here -->
+<div id="feedback">
+<!-- Heading Of The Form -->
+<div class="head">
+<h3>FeedBack Form</h3>
+<p>This is feedback form. Send us your feedback !</p>
+</div>
+<!-- Feedback Form -->
+<form action="#" id="form" method="post" name="form">
+<input name="vname" placeholder="Your Name" type="text" value="">
+<input name="vemail" placeholder="Your Email" type="text" value="">
+<input name="sub" placeholder="Subject" type="text" value="">
+<label>Your Suggestion/Feedback</label>
+<textarea name="msg" placeholder="Type your text here..."></textarea>
+<input id="send" name="submit" type="submit" value="Send Feedback">
 </form>
-<?PHP
-$email = $_POST["emailaddress"];
-$to = "karolinpayp@protonmail.com";
-$subject = "New Email Address for Mailing List";
-$headers = "From: $email\n";
-$message = "A visitor to your site has sent the following email address to be added to your mailing list.\n
-Email Address: $email";
-$user = "$email";
-$usersubject = "Thank You";
-$userheaders = "From: you@youremailaddress.com\n";
-$usermessage = "Thank you for subscribing to our mailing list.";
-mail($to,$subject,$message,$headers);
-mail($user,$usersubject,$usermessage,$userheaders);
-?>
-		
-	</body>
-
-		
+<h3><?php include "secure_email_code.php"?></h3>
+</div>
+<!-- Feedback Form Ends Here -->
+</div>
+</body>
+<!-- Body Ends Here -->
 </html>
